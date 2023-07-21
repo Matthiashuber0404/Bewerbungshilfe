@@ -1,0 +1,53 @@
+.center {
+    text-align: center;
+}
+
+.headline-colored {
+    color: #17a2b8
+}
+
+
+.margpadd {
+    padding: 10px; 
+    margin-top: 10px; 
+}
+
+.lightBack {
+    background-color: rgb(240, 240, 240);
+}
+
+.padd {
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+
+label {
+    margin-left: 5px;
+}
+  
+legend {
+    border: 1px solid #17a2b8;
+    border-radius: 10px;
+    background-color: #17a2b8;
+    color: white;
+}
+
+/* * {
+    border: 1px solid rebeccapurple;
+} */
+
+input[type="file"] {
+    border: 1px solid rgb(240, 240, 240);
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    align-items: baseline;
+    color: inherit;
+    text-overflow: ellipsis;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+    overflow: hidden !important;
+  }
+  

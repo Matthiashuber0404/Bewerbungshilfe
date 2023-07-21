@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewerbung</title>
+    <link rel="icon" href="images/Icon_bewerbung.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="http://10.0.201.4:5500/073_CSS_Webseite/index.html">[Firmenname]</a>                                                                                              <!-- IP anpassen -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="http://10.0.201.4:5500/073_CSS_Webseite/index.html#projekte">Projekte</a>                                                                                        <!-- IP anpassen -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://10.0.201.4:5500/073_CSS_Webseite/index.html#ueberuns">Über uns</a>                                                                                        <!-- IP anpassen -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://10.0.201.4:5500/073_CSS_Webseite/index.html#kontakt">Kontakt</a>                                                                                          <!-- IP anpassen -->
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="">Ausbildung<span class="sr-only">(current)</span></a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col">
+                <!-- Left Space -->
+            </div>
+            <div class="col-12">
+                <h1 class="center headline-colored"> Bewerbung </h1>
+                <br>
+                <fieldset class="border margpadd border-dark rounded lightBack">
+                    <legend class="w-auto mb-3 text-uppercase">Info</legend>
+                    <div class="row padd">
+                        <div class="col-12">
+                            Auf dieser Webseite können Sie ganz einfach im nachfolgenden Formular ihre Kontaktdaten und
+                            Bewerbungsunterlagen an uns zusenden.
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <br>
+                            Wir freuen uns auf ihre Bewerbung
+                        </div>
+                        <div class="col-md-6">
+
+                        </div>
+                    </div>
+                </fieldset>
+                <br>
+                <form id="frmBewerbung">
+                    <fieldset class="border margpadd border-dark rounded lightBack">
+                        <legend class="w-auto mb-3 text-uppercase">Persönliche Daten</legend>
+                        <div class="row padd">
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" id="vorname"
+                                        placeholder="Vorname" required>
+                                    <label for="vorname">Vorname</label>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" id="Nachname"
+                                        placeholder="Nachname" required>
+                                    <label for="Nachname">Nachname</label>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select class="form-control form-control-lg" id="Geschlecht" required>
+                                        <option>Bitte auswählen</option>
+                                        <option>Männlich</option>
+                                        <option>Weiblich</option>
+                                        <option>Divers</option>
+                                        <option>🚁</option>
+                                    </select>
+                                    <label for="Geschlecht">Geschlecht</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="date" class="form-control form-control-lg" id="geburtstag" required>
+                                <label for="geburtstag">Geburtsdatum</label>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="email" class="form-control form-control-lg" id="email"
+                                    placeholder="Ihre.Mailadresse1@beispiel.de" required autocomplete="additional-name">
+                                <label for="email">E-Mail-Adresse</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset class="border margpadd border-dark rounded lightBack">
+                        <legend class="w-auto mb-3 text-uppercase">Adressdaten</legend>
+                        <div class="row padd">
+                            <div class="col-md-9">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" id="straße"
+                                        placeholder="Straße" required>
+                                    <label for="straße">Straße</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" id="hausnummer"
+                                        placeholder="Hausnummer" required>
+                                    <label for="hausnummer">Hausnummer</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                                <div class="form-group">
+                                    <input type="number" class="form-control form-control-lg" id="plz" placeholder="PLZ"
+                                        required>
+                                    <label for="plz">PLZ</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" id="Wohnort"
+                                        placeholder="Wohnort" required>
+                                    <label for="Wohnort">Wohnort</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset class="border margpadd border-dark rounded lightBack">
+                        <legend class="w-auto mb-3 text-uppercase">Ausbildung</legend>
+                        <div class="row padd">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <select class="form-control form-control-lg" id="Ausbildungsbeginn" required>
+                                        <option>Bitte auswählen</option>
+
+                                    </select>
+                                    <label for="Ausbildungsbeginn">Ausbildungsbeginn</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <select class="form-control form-control-lg " id="Ausbildungsrichtung" required>
+                                        <option>Bitte auswählen</option>
+                                        <option>Bauleiter(in)</option>
+                                        <option>Gärtner(in)</option>
+                                        <option>Elektroniker(in)</option>
+                                        <option>Architekt(in)</option>
+                                    </select>
+                                    <label for="Ausbildungsrichtung">Ausbildungsrichtung</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <select class="form-control form-control-lg" id="jahrAbschluss" required>
+                                        <option>Bitte auswählen</option>
+
+                                    </select>
+                                    <label for="jahrAbschluss">Jahr des (erwarteten) Schulabschlusses</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <select class="form-control form-control-lg" id="Abschluss" required>
+                                        <option>Bitte auswählen</option>
+                                        <option>Hauptschulabschluss</option>
+                                        <option>Mittelschulabschluss</option>
+                                        <option>Qualifizierender Hauptschulabschluss</option>
+                                        <option>Qualifizierender Mittelschulabschluss</option>
+                                        <option>Mittlere Reife</option>
+                                    </select>
+                                    <label for="Abschluss">Schulabschluss</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset class="border margpadd border-dark rounded lightBack">
+                        <legend class="w-auto mb-3 text-uppercase">Anhang</legend>
+                        <div class="row padd">
+                            <div class="col-md-12">
+
+                                <div class="form-group">
+
+                                    <input type="file" class="form-control" id="exampleFormControlFile1"
+                                        accept=".doc, .docx, .pdf, .zip" required>
+                                    <br>
+                                    <label for="exampleFormControlFile1">Hier können Sie Ihre Bewerbung (Anschreiben,
+                                        Lebenslauf, Zeugnisse) gesammelt in <b> einer einzigen Datei </b>
+                                        (.doc,.docx,.odt,.pdf,.zip) hochladen.</label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <br>
+                
+                            
+                            <button type="submit" class="btn btn-info btn-block btn-lg"  >Bewerbung abschicken</button>
+
+                    <br>
+                    <br>
+                    <br>
+                    
+                </form>
+
+            </div>
+            <div class="col">
+                <!-- Right Space -->
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-white " style="background-color: #21081a;">
+        
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: black">
+          © 2023 Copyright
+          <a class="text-white" href="https://mdbootstrap.com/"></a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+
+</html>
